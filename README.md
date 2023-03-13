@@ -1,1 +1,1 @@
-# react-series
+# frontend-series
