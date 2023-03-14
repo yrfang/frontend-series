@@ -116,3 +116,60 @@ li.item svg:hover {
   color: red;
   outline: none;
 }
+
+.addForm {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type="text"] {
+  flex-grow: 1;
+  min-width: calc(100% - 50px);
+  min-height: 48px;
+  margin-right: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.addForm button {
+  height: 48px;
+  min-width: 48px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  background-color: orange;
+}
+
+.searchForm {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type="text"] {
+  flex-grow: 1;
+  min-height: 48px;
+  margin-right: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  outline: none;
+  font-size: 1rem;
+}
