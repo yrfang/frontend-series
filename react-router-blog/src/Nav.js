@@ -12,12 +12,12 @@ const Nav = ({ search, setSearch }) => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/post">Posts</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
       </form>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/post">Posts</Link></li>
+        <li><Link to="/about">About</Link></li>
+      </ul>
     </nav>
   );
 }
