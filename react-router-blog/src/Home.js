@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import DataContext from "./context/DataContext";
 import Feed from "./Feed";
 
-const Home = ({ posts, fetchError, isLoading }) => {
+const Home = () => {
+  const { searchResults, isLoading, fetchError } = useContext(DataContext);
+  const posts = searchResults;
+
   return (
     <main className="Home">
       {isLoading && <p className="statusMsg">Loading posts...</p>}
